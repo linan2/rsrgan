@@ -55,7 +55,7 @@ def main():
 
         lists = range(len(lists_inputs))
         random.shuffle(lists)
-        for i in xrange(len(lists)):
+        for i in lists:
             line_input = lists_inputs[i]
             line_label = lists_labels[i]
             if i < FLAGS.val_size:
